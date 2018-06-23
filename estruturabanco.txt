@@ -1,0 +1,32 @@
+create table produto(
+  id serial,
+  nome varchar(20),
+  fornecedor varchar(20),
+  preco decimal,
+  codigoProduto int,
+  validade int,
+  estoque int
+)
+
+create table medicamento(
+  id serial,
+  tipoMedicamento varchar(20),
+  controlado char
+)inherits(produto);
+
+create table cosmetico(
+  id serial,e
+  tipoCosmetico varchar(20),
+  genero char
+)inherits(produto);
+
+create table alimenticios(
+  id serial,
+  1 varchar(15)
+)inherits(produto);
+
+create table movimentacaoProduto(
+  id serial,
+  dataMovimentacao datetime
+)inherits(produto);
+

@@ -1,0 +1,115 @@
+switch (tipoProduto) {
+			
+System.out.println("Selecione o tipo de produto: ");
+
+System.out.println("Para cadastrar medicamento digite: 1 " + "\n" + "Para cadastrar cosmetico digite: 2 " + " \n" + "Para cadastrar alimentos digite: 3 ");
+int tipoProduto = scanf.nextInt();	
+	
+		case 1:
+				
+			
+				System.out.println(" ***Cadastro medicamento*** " + "\n");
+				
+				System.out.println("Digite nome do medicamento: ");
+				String lixo = scanf.nextLine();
+				String nomeMed = scanf.nextLine();
+				
+				System.out.println("Digite o preço do medicamento: ");
+				double precoMed = scanf.nextDouble();
+				
+				System.out.println("Digite o fornecedor do medicamento: ");
+				lixo = scanf.nextLine();
+				String fornecedorMed = scanf.nextLine();
+				
+				
+				System.out.println("Digite o codigo do produto: ");
+				int codigoMed = scanf.nextInt();
+				
+				System.out.println("Digite a validade do medicamento: ");
+				int validadeMed = scanf.nextInt();
+				
+				System.out.println("Digite a quantidade de medicamentos: ");
+				int estoqueMed = scanf.nextInt();
+				
+				System.out.println("Digite o tipo do medicamento: ");
+				String tipoMed = scanf.nextLine();
+				
+				System.out.println("O medicamento é controlado?: ");
+				String controlado = scanf.nextLine();
+				
+				
+				
+				Medicamento A = new Medicamento(nomeMed, precoMed, fornecedorMed, codigoMed, validadeMed,estoqueMed, tipoMed, controlado) ;
+				
+				cariri.CadastrarProduto(A);
+				cariri.ListarProdutos();
+				
+				
+				break;
+			
+		case 2:
+				System.out.println("Cadastro Cosméticos: ");
+				
+				System.out.println("Digite nome do produto: ");
+				lixo = scanf.nextLine();
+				String nomeCos = scanf.nextLine();
+				
+				System.out.println("Digite o preço do produto: ");
+				double precoCos = scanf.nextDouble();
+				
+				System.out.println("Digite o fornecedor do produto: ");
+				lixo = scanf.nextLine();
+				String fornecedorCos = scanf.nextLine();
+				
+				
+				System.out.println("Digite o codigo do produto: ");
+				int codigoCos = scanf.nextInt();
+				
+				System.out.println("Digite a validade do produto: ");
+				int validadeCos = scanf.nextInt();
+				
+				System.out.println("Digite a quantidade do produto: ");
+				int estoqueCos = scanf.nextInt();
+				
+				Medicamento A = new Medicamento(nomeMed, precoMed, fornecedorMed, codigoMed, validadeMed,estoqueMed, tipoMed, controlado) ;
+				
+				cariri.CadastrarProduto(A);
+				cariri.ListarProdutos();
+				
+				break;
+				
+			case 3:
+				System.out.println("Cadastro Alimentício: ");
+				
+				System.out.println("Digite nome do produto: ");
+				lixo = scanf.nextLine();
+				String nomeAli = scanf.nextLine();
+				
+				System.out.println("Digite o preço do produto: ");
+				double precoAli = scanf.nextDouble();
+				
+				System.out.println("Digite o fornecedor do produto: ");
+				lixo = scanf.nextLine();
+				String fornecedorAli = scanf.nextLine();
+				
+				
+				System.out.println("Digite o codigo do produto: ");
+				int codigoAli = scanf.nextInt();
+				
+				System.out.println("Digite a validade do produto: ");
+				int validadeALi = scanf.nextInt();
+				
+				System.out.println("Digite a quantidade do produto: ");
+				int estoqueAli = scanf.nextInt();
+				
+				
+				
+				
+				break;
+				
+				default: 
+					
+					System.out.println("Opcao invalida");
+					break;
+		}
+		
